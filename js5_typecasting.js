@@ -15,7 +15,7 @@ console.log(
     String(undefined)
 )
 
-consolg.log(
+console.log(
     Number("1234"), //1234
     Number("hihi"),//부정적인표현 NaN 출력
     Number(true), // 1
