@@ -1,9 +1,9 @@
 //형 변환 String() Number() Boolean()
 //잘못된 예시
-let korea = prompt("국어 점수 : ")
+let korean = prompt("국어 점수 : ")
 let math = prompt("수학 점수 : ")
 let eng = prompt("영어 점수 : ")
-let result = (math+eng) / 3
+let result = (korean+math+eng) / 3
 
 console.log(result)
 //위의 결과는 엉뚱하게 나온다. prompt는 string형태로 입력받기 때문이다.
