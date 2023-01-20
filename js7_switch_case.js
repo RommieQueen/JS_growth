@@ -16,4 +16,7 @@ switch(q){
     case '5' :
         console.log('위스키 한 잔 / 30년산 / 800000000원')
         break
+    default :
+        console.log('이건 없잖아!!')
+        break
 }
