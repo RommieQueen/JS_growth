@@ -26,5 +26,11 @@ let somebody = {
 let girl = somebody
 somebody = null
 girl.callName() //제대로 출력이 된다.
-//this의 개념을 계속 공부하도록 하자.
+
+let me = {
+    name : "JES",
+    sayThis : function(){ //화살표 함수면 에러
+        console.log(this)
+    }
+}
 
