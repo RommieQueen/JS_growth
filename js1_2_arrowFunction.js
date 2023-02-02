@@ -5,6 +5,7 @@ let showError = function(){
 } //함수 표현식
 showError()
 
+
 const add = (x,y) => {
     console.log(x+y)
 }
