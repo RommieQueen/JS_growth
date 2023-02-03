@@ -44,7 +44,20 @@ const info1 = {
 const info2 = {
     fav : "computer"
 }
+console.log(Object.assign(user2, info, info1, info2))
 
-const assign = Object.assign(user2, info, info1, info2)
-console.log(assign)
+//.assign() 복사만 하기
+console.log("**** 자기자신만 복사 ****")
+const user3 = {
+    name : "brown",
+    age : "18",
+    fav : "game"
+}
+const user4 = Object.assign({}, user3)
+user4.name = "Minty" //유저3의 이름엔 대입되지 않는다.
+console.log(user3.name) //brown 출력
+console.log(user4.name) //minty 출력
 
+const user5 = user3;
+user5.name = "molly" //user3의 name에 대입돼서
+console.log(user3.name) //brown이 molly 로 바뀐다.
